@@ -16,7 +16,7 @@
   </a>
 </p>
 
-> Generates random data which contains names, phone numbers and emails this repository also generates Indian names, phones numbers
+> Generates random data which contains names, phone numbers and emails this repository also generates Indian names, phones numbers.
 
 ### 🏠 [Homepage](https://github.com/TheForgotensoul/random-data-generator)
 
