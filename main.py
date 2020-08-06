@@ -12,7 +12,7 @@ def main():
     filename = input("enter the location to save the file(ex: F:/some_folder/some_name.xlsx): ")
 
     print("keywords : name, firstname, lastname, phone, email, indname, indfirstname, "
-          "indlastname, indphone \nchoose keyword or keywords \nExample: name phone indname email")
+          "indlastname, indphone \n\nchoose keyword or keywords \n\nExample: name phone indname email \n")
 
     while rn:  # Checks weather the keywords exits in the list
         keys = ["name", "firstname", "lastname", "phone", "email", "indname", "indfirstname", "indlastname", "indphone"]
@@ -28,7 +28,6 @@ def main():
     for key in keywords:  # Capitalize the keys in the keywords
         c = key.capitalize()
         Keywords.append(c)
-    print(Keywords)
 
     num = int(input("provide the length of data: "))  # stores the number to print the data
 
