@@ -54,29 +54,35 @@ class Name:
 class Ind:
     @staticmethod
     def firstname(num):
+        fn = []
         for i in range(int(num)):
-            with open("Names.txt", "r") as f:
+            with open("indian_names.txt", "r") as f:
                 first_names = f.read().splitlines()
                 first_name = random.choice(first_names)
-            return first_name
+            fn.append(first_name)
+        return fn
 
     @staticmethod
     def lastname(num):
+        ln = []
         for i in range(int(num)):
-            with open("Names.txt", "r") as f:
+            with open("indian_last_name.txt", "r") as f:
                 last_names = f.read().splitlines()
                 last_name = random.choice(last_names)
-            return last_name
+            ln.append(last_name)
+        return ln
 
     @staticmethod
     def fullname(num):
+        fl = []
         for i in range(int(num)):
-            with open("Names.txt", "r") as f, open("last_name.txt", "r") as lt:
+            with open("indian_names.txt", "r") as f, open("indian_last_name.txt", "r") as lt:
                 first_names = f.read().splitlines()
                 last_names = lt.read().splitlines()
             first_name = random.choice(first_names)
             last_name = random.choice(last_names)
-            return f"{first_name} {last_name}"
+            fl.append(f"{first_name} {last_name}")
+        return fl
 
     @staticmethod
     def phone(num):
