@@ -91,3 +91,5 @@ class Ind:
             n = str(random.randint(60 * 10 ** 8, 90 * 10 ** 8 - 1))
             ph.append(f"+91 {n}")
         return ph
+
+   
